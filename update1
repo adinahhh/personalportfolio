@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+  
+<body>
+  <nav id="navbar">
+    <h1 id="name" class="name">Adinah Zilton</h1>
+  <div class="table">
+<ul id="horizontal-list">
+  <li><a href="#about">about me</a></li>
+  <li><a href="#projects">current projects</a></li>
+  <li><a href="#aspirations">aspirations</a></li>
+  <li><a href="#contact">contact</a></li>
+</ul>
+  </div>
+</nav>
+
+  <main>    
+<div id="welcome-section">
+<section id="about">
+<h1>about me</h1>
+  <p>Welcome to my portfolio page. I am currently learning how to code. Right now I am learning web design using HTML and CSS. I am eager to learn Javascript next!</p>
+  </section>
+<section id="projects">
+  <h1>current projects</h1>
+    <p class="project-tile">Here is one of my finished projects:</p>
+  <div id="projects">
+  <button type="button" class="tribute-project"><a href="https://codepen.io/zilton/pen/NBmRYy" target="_blank">Tribute Page</a></button>
+</div>
+    <p>To follow my journey, please check out my social media below:</p>
+  <div>
+  <button type="button" class="social-media"><a href="https://www.linkedin.com/in/zilton/" target="_blank">LinkedIn</a></button>
+  <button type="button" class="social-media"><a href="https://github.com/adinahhh" target="_blank" id="profile-link">Github</a></button>
+  <button type="button" class="social-media"><a href="https://www.freecodecamp.org/adinah" target="_blank">FreeCodeCamp</a></button> 
+  </div>
+</section>
+<section id="aspirations"> 
+  <h1>aspirations</h1>
+  <p>By the end of 2018, I'd like to be freelancing as a front-end developer. I am almosttt done with Free Code Camp's Web Design certification. I'd also like to complete their Javascript and Front End Libraries certifications as well.</p>
+  </section>
+<section id="contact">
+  <h1>contact</h1>
+  <p>If you'd like to contact me about any projects, please <a href="mailto:example@email.com">email me.</a></p>
+  </section>
+    </div>
+  </main>
+</body>
+</html>
+
+/* body styles start here*/
+body {
+  text-align: center;
+  background: #DDDDDD;
+  padding-top: 80px;
+ font-family: 'Montserrat', sans-serif;
+}
+
+/* media queries start here*/
+@media screen and (min-width: 749px) {
+  body {
+  font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 750px) {
+  body{
+  font-size: 1rem;
+}
+}
+/* media queries end here*/
+
+#name {
+  background: #39CCCC;
+  color: #000000;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 0.6rem;
+  font-size: 2rem;
+}
+
+/* navigation styles START here*/
+#navbar {
+  background: #39CCCC;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  float: right;
+}
+.table {
+  display: grid;
+  margin: 0 auto;
+  background: #39CCCC;
+  width: 100%;
+}
+
+nav ul {
+min-width: 0px;
+list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 50px;
+  position: relative;
+}
+#welcome-section {
+  height: 100vh;
+}
+
+nav::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+}
+nav a:hover {
+  color: #d9f2d9;
+  font-size: 1.2rem;
+}
+nav a:before {
+	content: "";
+	display: block;
+	height: 5px;
+	width: 100%;
+	background-color: #000000;
+  position: absolute;
+  bottom: -5px;
+  width: 0%;
+  transition: all ease-in-out 200ms;
+}
+nav a:hover::before {
+  width: 100%;
+}
+/* navigation styles END here*/
+
+/*container for tribute page */
+#projects {
+  text-decoration: none;
+}
+.tribute-project a {
+  text-decoration: none;
+  color: #000000;
+}
+.tribute-project {
+  background-color: #85e0e0;
+  padding: 34px 22px;
+  text-align: center;
+  display: flex;
+  font-size: 1rem;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.tribute-project:hover {
+  background-color: white;
+  font-size: 1.1rem;
+}
+
+/*button styles start here */
+.social-media {
+  background-color: #aeeaea;
+  padding: 26px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 1rem;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  margin: 5px 10px 5px;
+}
+.social-media:hover {
+	background-color: white;
+	font-size: 1.1rem;
+}
+.social-media a {
+  text-decoration: none;
+  color: black;
+}
