@@ -1,0 +1,135 @@
+/* body styles start here*/
+body {
+  text-align: center;
+  background: #DDDDDD;
+  padding-top: 80px;
+ font-family: 'Montserrat', sans-serif;
+}
+
+/* media queries start here*/
+@media screen and (min-width: 749px) {
+  body {
+  font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 750px) {
+  body{
+  font-size: 1rem;
+}
+}
+/* media queries end here*/
+
+#name {
+  background: #39CCCC;
+  color: #000000;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 0.6rem;
+  font-size: 2rem;
+}
+
+/* navigation styles START here*/
+#navbar {
+  background: #39CCCC;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  float: right;
+}
+.table {
+  display: grid;
+  margin: 0 auto;
+  background: #39CCCC;
+  width: 100%;
+}
+
+nav ul {
+min-width: 0px;
+list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 50px;
+  position: relative;
+}
+#welcome-section {
+  height: 100vh;
+}
+
+nav::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+}
+nav a:hover {
+  color: #d9f2d9;
+  font-size: 1.2rem;
+}
+nav a:before {
+	content: "";
+	display: block;
+	height: 5px;
+	width: 100%;
+	background-color: #000000;
+  position: absolute;
+  bottom: -5px;
+  width: 0%;
+  transition: all ease-in-out 200ms;
+}
+nav a:hover::before {
+  width: 100%;
+}
+/* navigation styles END here*/
+
+/*container for tribute page */
+#projects {
+  text-decoration: none;
+}
+.tribute-project a {
+  text-decoration: none;
+  color: #000000;
+}
+.tribute-project {
+  background-color: #85e0e0;
+  padding: 34px 22px;
+  text-align: center;
+  display: flex;
+  font-size: 1rem;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.tribute-project:hover {
+  background-color: white;
+  font-size: 1.1rem;
+}
+
+/*button styles start here */
+.social-media {
+  background-color: #aeeaea;
+  padding: 26px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 1rem;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  margin: 5px 10px 5px;
+}
+.social-media:hover {
+	background-color: white;
+	font-size: 1.1rem;
+}
+.social-media a {
+  text-decoration: none;
+  color: black;
+}
